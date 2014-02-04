@@ -2,18 +2,26 @@
 Resources
 =========
 
-The fundamental concept in any RESTful API is the *resource*.  A resource is
-an object with a type, associated data, relationships to other resources, and
-a set of methods that operate on it. It is similar to an object
-instance in an object-oriented programming language, with the important
-difference that only a few standard methods are defined for the resource
-(corresponding to the standard HTTP GET, POST, PUT and DELETE methods), while
-an object instance typically has many methods.
+.. The fundamental concept in any RESTful API is the *resource*.  A resource is
+    an object with a type, associated data, relationships to other resources, and
+    a set of methods that operate on it. It is similar to an object
+    instance in an object-oriented programming language, with the important
+    difference that only a few standard methods are defined for the resource
+    (corresponding to the standard HTTP GET, POST, PUT and DELETE methods), while
+    an object instance typically has many methods.
 
-Resources can be grouped into *collections*. Each collection is homogeneous so
-that it contains only one type of resource, and unordered. Resources can also
-exist outside any collection. In this case, we refer to these resources as
-*singleton resources*. Collections are themselves resources as well.
+The fundamental concept 全てのRESTful APIはリソースです。リソースはタイプ、付属(associated)するデータ、他のリソースへの関連、そしてリソースを操作するいくつかの手続きを持ったオブジェクトです。
+それはオブジェクト指向プログラミング言語に置けるオブジェクトのインスタンスと似ています。
+重要な違いは、オブジェクトのインスタンスは数多くのメソッドを定義することが出来ることと比べて、
+リソースにはいくつかの標準メソッド(corresponding to the HTTP GET, POST, PUT, DELETEメソッド)しか定義されていないことです。
+
+
+.. Resources can be grouped into *collections*. Each collection is homogeneous so
+    that it contains only one type of resource, and unordered. Resources can also
+    exist outside any collection. In this case, we refer to these resources as
+    *singleton resources*. Collections are themselves resources as well.
+
+リソースはコレクションに所属することが出来ます。それぞれのコレクションはhomogeneous
 
 Collections can exist globally, at the top level of an API, but can also be
 contained inside a single resource. In the latter case, we refer to these
